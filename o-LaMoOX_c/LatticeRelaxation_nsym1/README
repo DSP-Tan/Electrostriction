@@ -1,0 +1,10 @@
+y means "yes" or successful completion, r means "running", p means "problem".
+
+state          Relax      DFPT
+eqm            y          y
+SigX           yyyyy      yyyyy
+SigY           yyyyy      ryyyr
+SigZ           yyyyy      yyyyy   
+SigYZ          yyyyy      nryrn
+SigXZ          yyyyy      yyyyy
+SigXY          ryyyy      nyyyy

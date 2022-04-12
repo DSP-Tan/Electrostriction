@@ -1,0 +1,9 @@
+
+
+*******************************************************************************
+Thu Oct 28 19:05:47 2021
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressPerm.txt)" using ($2*10**9):($3*eps_free)
+        format = x:z
+BREAK: No data to fit

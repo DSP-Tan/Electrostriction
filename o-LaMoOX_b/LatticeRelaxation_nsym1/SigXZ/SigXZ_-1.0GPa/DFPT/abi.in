@@ -1,0 +1,117 @@
+#input for KTaO3
+
+ndtset    3
+
+autoparal 1
+
+#Crystal Def.
+ntypat   3
+natom    26
+typat    4*1 4*2 18*3
+znucl    57 42 8
+acell 3*1
+
+
+rprim
+  1.35397721674525E+01  1.74758844708352E-01  1.81858995109518E-01
+  1.70215362049005E-01  1.32740310529203E+01  5.02175525128956E-02
+  1.70253461642897E-01  5.90148173242477E-02  1.36943150867710E+01
+
+             xred      8.1596276646E-01  8.4604724807E-01  8.4996376094E-01
+                       3.9369717619E-01  6.2714907112E-01  1.4883554554E-01
+                       1.5709326705E-01  3.6748218626E-01  5.7142819972E-01
+                       6.3673984144E-01  1.3977530944E-01  3.2001701583E-01
+                       1.8520057885E-01  1.5623529375E-01  1.3264530869E-01
+                       6.9471081718E-01  3.2674142411E-01  7.9095065467E-01
+                       8.1388053525E-01  6.7115410922E-01  3.8089024058E-01
+                       3.0712446353E-01  8.1607054905E-01  6.7490834736E-01
+                       3.4021809630E-01  3.2795690561E-01  2.9833413252E-01
+                       8.9616213287E-01  1.9194123768E-01  7.0471390421E-01
+                       7.2680670673E-01  8.2163982414E-01  1.8281106864E-01
+                       1.2515383277E-01  6.7309206216E-01  7.6907668153E-01
+                       9.9371042477E-01  2.0826649507E-01  2.9267008797E-01
+                       5.1215077838E-01  2.8598581068E-01  6.3809016307E-01
+                       5.5562948195E-02  6.4076197552E-01  3.2376213859E-01
+                       4.6891719665E-01  8.4592901128E-01  8.5135372824E-01
+                       3.6378992349E-01  9.7740715672E-01  2.0698000487E-01
+                       2.2748983795E-01  3.1816572809E-02  5.8268005158E-01
+                       6.6149091553E-01  5.4062914797E-01  9.2632610836E-01
+                       6.7642929163E-01  4.8169952086E-01  2.9007890303E-01
+                       2.2906450606E-01  3.4000853635E-01  9.6226967310E-01
+                       7.4979282177E-01  8.8384577866E-01  5.2589597440E-01
+                       4.0227558683E-01  6.7137386673E-01  4.9581590764E-01
+                       6.6104028442E-01  1.6179717086E-01 -2.0666014612E-02
+                       7.6707934509E-02 -1.5907605149E-02 -8.9546275475E-03
+                       8.2884333520E-01  5.3109904103E-01  6.0912504109E-01
+ 
+nshiftk 1
+shiftk 
+0.5 0.5 0.5
+#chksymbreak 0
+kptopt   1
+ngkpt    2 2 2
+
+ecut 30
+ixc      -116133
+nband    104
+nstep    150
+diemac   4
+
+
+# Data set 1 - Refinement of already computed GS WFs       
+irdwfk1   0
+irdden1   0
+iscf1     7
+tolvrs1   1.0E-20
+nstep1    100
+
+# Data Set 2: Response Function calculation : d/dk 
+rfelfd2    2 
+rfdir2     1    1    1 
+
+nqpt2      1 
+qpt2       0.0  0.0  0.0  
+
+getwfk2   -1 
+getden2   -1 
+
+kptopt2    2 
+
+iscf2     -3 
+
+tolwfr2    1.0d-22 
+
+# Data set 3 : Response Function calculation - electric field perturbation, phonons, and strain
+
+rfphon3   1            # Will consider phonon-type perturbation 
+rfelfd3   3            # Electric Field
+rfstrs3   3            # Strains
+
+rfdir3    1   1   1    # Along all reduced coordinate axis 
+rfatpol3  1   26        # All the atoms will be displaced 
+
+nqpt3     1            # One wavevector is to be considered 
+qpt3      0.0 0.0 0.0  # This wavevector is q=0 (Gamma) 
+
+kptopt3   2            # Automatic generation of k points, taking 
+                       # into account the time-reversal symmetry only 
+
+getwfk3   1            # Read the ground-state wavefunctions 
+getddk3   2
+                                              
+tolvrs3   1.0d-20      # SCF stopping criterion 
+                       
+
+
+
+# Printing flags
+prtden    1
+prteig    0
+prtwf     1
+prtposcar 0
+prtcif    0
+
+ecutsm  0.5
+            ngfft          72      75      75
+pawecutdg  30
+pawxcdev   0

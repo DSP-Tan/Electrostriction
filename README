@@ -1,0 +1,32 @@
+
+The structure lowercase b is actually the structure c, you made a mistake. 
+As soon as there are no calculations running you must fix this.
+
+These structures are all based on Philippe's advice contained here:
+
+Daniel, thank you for your nice presentation this morning. Following our discussion about my ordered La2Mo2O9 model, here are the coordinates of the possible four O4 atoms to choose from as atoms O24 and O25 (before relaxation):
+O4(1) : 0.025  0.025  0.025
+O4(2) : 0.525  0.475  0.975
+O4(3) : 0.975  0.525  0.475
+O4(4) : 0.475  0.975  0.525
+So O24+O25 can be alternatively one of the six following couples :
+O4(1)+O4(2)   - o-LaMoOX_a   - Relaxed_nsym0, perm, Electrostrict 
+O4(1)+O4(3)   - o-LaMoOX_b   - Relaxed_nsym0, perm,
+O4(1)+O4(4)   - o-LaMoOX_c   - Relaxed_nsym0, perm, ---
+O4(2)+O4(3)   - o-LaMoOX_d   - Relaxed_nsym0, perm,
+O4(2)+O4(4)   - o-LaMoOX_e   - Relaxed_nsym0, perm,
+O4(3)+O4(4)   - o-LaMoOX_f   - Relaxed_nsym0, perm, ---
+
+O4(1)+O4(2)   - o-LaMoOX_a   - Y_nsym1, perm 
+O4(1)+O4(3)   - o-LaMoOX_b   - Y_nsym1, perm
+O4(1)+O4(4)   - o-LaMoOX_c   - R_nsym1, 
+O4(2)+O4(3)   - o-LaMoOX_d   - X_nsym1, 
+O4(2)+O4(4)   - o-LaMoOX_e   - X_nsym1, 
+O4(3)+O4(4)   - o-LaMoOX_f   - X_nsym1, 
+
+Any statistics should inculde all six possibilities with equal probabilities.
+Alternatively, other disorder possibilities might include replacement of one of the twelve O2 atoms (named from O12 to O23, included) by one of the two remaining O4 atoms not already choosen as O24 or O25.
+It looks a little bit complicated, but is rather obvious when considering the structural model.
+Best wishes, Phiippe.
+
+for now avoid b, it is difficult to relax

@@ -1,0 +1,1 @@
+#alpha 	U (GPa)             	stress1 (GPa)       	w_TA (cm-1)	w_LA (cm-1)	w_TO (cm-1)	w_LO (cm-1)	dielectric

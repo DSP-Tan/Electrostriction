@@ -1,0 +1,36 @@
+   asr     1   # 0=>no ASR; 1=>ASR symmetric; 2=>ASR unconstrained
+   chneut  1   # 0=>no; 1=>ASR for Z*(equal portion); 2=>ASR for Z* +screening charge
+
+
+! Flags
+!*******
+   dieflag  1  # 0=>not; 1=>freq-depdt epsilon tensor; 2=>epsilo infty; 3=>relaxed-ion epsilon tensor
+   elaflag  3  #the flag for the elastic constant
+ piezoflag  7  #the flag for the piezoelectric constant
+ instrflag  1  #the flag for the internal strain tensor
+
+! Wavevector grid number 1
+!**************************
+   brav  1               # 1=> all; 2=>FCC; 3=>BCC; 4=>Hexagonal
+   ngqpt 1 1 1           # Number of Grids points for Q Points
+   nqshft 1              # Number of vector shifts of the simple Monkhorst and Pack grid: 2=>BCCsampling; 4=>FCCsampling
+   q1shft 0.0 0.0 0.0
+
+! Wavevector list number 1
+!**************************
+  nph1l 1      # Number of PHonons in List 1
+  qph1l 
+  0.0 0.0 0.0 1 
+
+!Wavevector list number 2 (Cartesian directions for non-analytic gamma phonons)
+
+! The output for this calculation must be cut-and-pasted into the
+! out.freq file to be used as band2eps input to get proper LO-TO
+! splitting at gamma.  Note that gamma occurrs twice.
+
+   nph2l 1
+   qph2l 0.0  0.0  1.0  0
+
+
+
+
