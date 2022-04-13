@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# This script first checks to see if the relaxation is finished,
+# and that the DFPT has not already been done. If these two conditions
+# hold true, then it makes the DFPT abi.in input file, using the scripts
+# MakeGS.sh and MakeDFPT.sh.
+
+# Because the DFPT runs require more memory and time than the relaxations 
+# generally, more time and memory are defined in the Run.sh.
+
 for i in Sig[XYZ]*_*GPa
 do
 
