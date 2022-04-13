@@ -3,6 +3,7 @@ LC_NUMERIC="en_US.UTF-8"
 
 
 
+
 ######################################################################################################################################
 ##################### Extract permitivity and stresses from anaddb.out in each folder. ###############################################
 ######################################################################################################################################
@@ -58,16 +59,14 @@ done
 ######################################################################################################################################
 
 # Load libaries necessary to use gsl libraries used by gslinv in ScriptsAndCodes.
-module load releases/2020a
-module load GSL/2.6-GCC-9.3.0
+module load releases/2019b
+module load GSL/2.6-GCC-8.3.0
 
-../../../ScriptsAndCodes/gslinv
+../../ScriptsAndCodes/gslinv
 
 ######################################################################################################################################
 ##################### Fit Q and M to StressPerm.txt and StressRigid.txt ##############################################################
 ######################################################################################################################################
-
-module load gnuplot/5.2.8-GCCcore-9.3.0
 
 # First put in the equilibrium values in the fitting script.
 eps0x=$(grep  -A3 -i "relaxed ion dielectric tensor" ${branch}_0.0GPa/DFPT/anaddb.out | sed -n 2p | awk '{print $1}')
