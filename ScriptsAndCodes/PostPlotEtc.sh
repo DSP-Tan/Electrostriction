@@ -17,10 +17,10 @@ do
    cp ../DFPT/abi.out    Sig${i}_0.0GPa/DFPT
   
 
-   cp ../../../ScriptsAndCodes/Extract${i}StressPerm.sh .
-   cp ../../../ScriptsAndCodes/Good${i}Fit.gp ./GoodFit.gp
+   cp ../../ScriptsAndCodes/Extract${i}StressPerm.sh .
+   cp ../../ScriptsAndCodes/Good${i}Fit.gp ./GoodFit.gp
    ./Extract${i}StressPerm.sh
-   ../../../ScriptsAndCodes/gslinv
+   ../../ScriptsAndCodes/gslinv
    ./Extract${i}StressPerm.sh
 
    cd ../
