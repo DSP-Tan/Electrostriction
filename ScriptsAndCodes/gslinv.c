@@ -12,8 +12,8 @@ double a_data[] = { 1.0, 0.6, 0.0, 0.0, 1.5, 1.0, 0.0, 1.0, 1.0 };
 double inva[9];
 int s, i, j,k;
 
-fout=fopen("StressRigid.txt","w");
 fptr=fopen("StressPerm.txt","r");
+fout=fopen("StressRigid.txt","w");
 fgets(line, 200, fptr);
 puts(line);
 
@@ -56,11 +56,6 @@ while( fscanf( fptr, "%lf %lf %lf %lf %lf %lf %lf %lf %lf %lf %lf", &D, &sigX, &
 
 fclose(fptr);
 fclose(fout);
-//fscanf(FILE *stream, const char *format, ...)
-
-
-
-
 
 
 
