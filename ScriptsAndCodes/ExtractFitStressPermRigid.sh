@@ -100,12 +100,15 @@ sed -i 's/^eta0yz=.*/eta0yz='$eta0yz'/g' GoodFit.gp
 sed -i 's/^eta0xz=.*/eta0xz='$eta0xz'/g' GoodFit.gp
 sed -i 's/^eta0xy=.*/eta0xy='$eta0xy'/g' GoodFit.gp
 
-sed 's@\^-0\\\.5/,/\^0\\\.5@\^-1\\\.0\/,\/\^1\\\.0@g' GoodFit.gp > 1GPaFit.gp
 
 rm fit.log
 gnuplot GoodFit.gp
 grep +/- fit.log > HalfGPaFit.log
 rm fit.log
 
-gnuplot 1GPaFit.gp 
-grep +/- fit.log > OneGPaFit.log
+if [ -f ${branch}_1.0GPa/DFPT/PpFin.txt ] && [ -f ${branch}_-1.0GPa/DFPT/PpFin.txt ]
+  then
+  sed 's@\^-0\\\.5/,/\^0\\\.5@\^-1\\\.0\/,\/\^1\\\.0@g' GoodFit.gp > 1GPaFit.gp
+  gnuplot 1GPaFit.gp 
+  grep +/- fit.log > OneGPaFit.log
+fi
