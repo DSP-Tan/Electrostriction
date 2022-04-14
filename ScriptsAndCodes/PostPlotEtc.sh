@@ -13,7 +13,6 @@ do
    
    cp ../DFPT/anaddb.out Sig${i}_0.0GPa/DFPT
    cp ../DFPT/anaddb.in  Sig${i}_0.0GPa/DFPT
-   cp ../DFPT/abi.out    Sig${i}_0.0GPa/
    cp ../DFPT/abi.out    Sig${i}_0.0GPa/DFPT
   
 
