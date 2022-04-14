@@ -120,7 +120,7 @@ M66_err=$(grep M66 SigXY/HalfGPaFit.log | awk -F "[()%]" '{print $2}' )
 
 
 printf "M_ijkl\n"
-printf "               & \\sigma_{xx} & \\sigma_{yy} & \\sigma_{zz} & \\sigma_{yz} & \\sigma_{xz} & \\sigma_{xy} \\ \\ \n"
+printf "                & \\sigma_{xx} & \\sigma_{yy} & \\sigma_{zz} & \\sigma_{yz} & \\sigma_{xz} & \\sigma_{xy} \\ \\ \n"
 printf "\\ epsilon_{x}  & %7.2f & %7.2f & %7.2f & %7.2f & %7.2f & %7.2f \\ \\ \n" "$M11" "$M12" "$M13" "$M14" "$M15" "$M16"
 printf "\\ epsilon_{y}  & %7.2f & %7.2f & %7.2f & %7.2f & %7.2f & %7.2f \\ \\ \n" "$M21" "$M22" "$M23" "$M24" "$M25" "$M26"
 printf "\\ epsilon_{z}  & %7.2f & %7.2f & %7.2f & %7.2f & %7.2f & %7.2f \\ \\ \n" "$M31" "$M32" "$M33" "$M34" "$M35" "$M36"
@@ -143,13 +143,13 @@ printf "\\ epsilon_{xy} & %5.0f & %5.0f & %5.0f & %5.0f & %5.0f & %5.0f\n" "$M61
 
 
 printf "M_ijkl\n"
-printf "             & \\sigma_{xx} & \\sigma_{yy} & \\sigma_{zz} & \\sigma_{yz} & \\sigma_{xz} & \\sigma_{xy} \\ \\ \n"
-printf "%7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f)\n" "$M11" "$M11_err" "$M12" "$M12_err" "$M13" "$M13_err" "$M14" "$M14_err" "$M15" "$M15_err" "$M16" "$M16_err"
-printf "%7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f)\n" "$M21" "$M21_err" "$M22" "$M22_err" "$M23" "$M23_err" "$M24" "$M24_err" "$M25" "$M25_err" "$M26" "$M26_err"
-printf "%7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f)\n" "$M31" "$M31_err" "$M32" "$M32_err" "$M33" "$M33_err" "$M34" "$M34_err" "$M35" "$M35_err" "$M36" "$M36_err"
-printf "%7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f)\n" "$M41" "$M41_err" "$M42" "$M42_err" "$M43" "$M43_err" "$M44" "$M44_err" "$M45" "$M45_err" "$M46" "$M46_err"
-printf "%7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f)\n" "$M51" "$M51_err" "$M52" "$M52_err" "$M53" "$M53_err" "$M54" "$M54_err" "$M55" "$M55_err" "$M56" "$M56_err"
-printf "%7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f) & %7.2f(%3.0f)\n" "$M61" "$M61_err" "$M62" "$M62_err" "$M63" "$M63_err" "$M64" "$M64_err" "$M65" "$M65_err" "$M66" "$M66_err"
+printf "                & \\sigma_{xx} & \\sigma_{yy} & \\sigma_{zz} & \\sigma_{yz} & \\sigma_{xz} & \\sigma_{xy} \\ \\ \n"
+printf "\\ epsilon_{x}  & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%)\n" "$M11" "$M11_err" "$M12" "$M12_err" "$M13" "$M13_err" "$M14" "$M14_err" "$M15" "$M15_err" "$M16" "$M16_err"
+printf "\\ epsilon_{y}  & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%)\n" "$M21" "$M21_err" "$M22" "$M22_err" "$M23" "$M23_err" "$M24" "$M24_err" "$M25" "$M25_err" "$M26" "$M26_err"
+printf "\\ epsilon_{z}  & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%)\n" "$M31" "$M31_err" "$M32" "$M32_err" "$M33" "$M33_err" "$M34" "$M34_err" "$M35" "$M35_err" "$M36" "$M36_err"
+printf "\\ epsilon_{yz} & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%)\n" "$M41" "$M41_err" "$M42" "$M42_err" "$M43" "$M43_err" "$M44" "$M44_err" "$M45" "$M45_err" "$M46" "$M46_err"
+printf "\\ epsilon_{xz} & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%)\n" "$M51" "$M51_err" "$M52" "$M52_err" "$M53" "$M53_err" "$M54" "$M54_err" "$M55" "$M55_err" "$M56" "$M56_err"
+printf "\\ epsilon_{xy} & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%) & %7.2f(%3.0f%%)\n" "$M61" "$M61_err" "$M62" "$M62_err" "$M63" "$M63_err" "$M64" "$M64_err" "$M65" "$M65_err" "$M66" "$M66_err"
 
 printf "M_ijkl\n"
 printf "%7.2f &(%5.0f) & %7.2f &(%5.0f) & %7.2f &(%5.0f) & %7.2f &(%5.0f) & %7.2f &(%5.0f) & %7.2f &(%5.0f)\n" "$M11" "$M11_err" "$M12" "$M12_err" "$M13" "$M13_err" "$M14" "$M14_err" "$M15" "$M15_err" "$M16" "$M16_err"
@@ -306,4 +306,28 @@ printf "%7.4f(%3.0f) & %7.4f(%3.0f) & %7.4f(%3.0f) & %7.4f(%3.0f) & %7.4f(%3.0f)
 printf "%7.4f(%3.0f) & %7.4f(%3.0f) & %7.4f(%3.0f) & %7.4f(%3.0f) & %7.4f(%3.0f) & %7.4f(%3.0f)\n" "$Q61" "$Q61_err" "$Q62" "$Q62_err" "$Q63" "$Q63_err" "$Q64" "$Q64_err" "$Q65" "$Q65_err" "$Q66" "$Q66_err"
 
 
+########################################################################
+#####################  Write Markdown files  ###########################
+########################################################################
 
+printf "M_ijkl (fitting error in percentage)\n" > Matrix.md
+printf "|        | sig_xx         | sig_yy         | sig_zz         | sig_yz         | sig_xz         | sig_xy         |\n" >> Matrix.md
+printf "| -----  | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |\n" >> Matrix.md
+printf "| eps_x  | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$M11" "$M11_err" "$M12" "$M12_err" "$M13" "$M13_err" "$M14" "$M14_err" "$M15" "$M15_err" "$M16" "$M16_err" >> Matrix.md
+printf "| eps_y  | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$M21" "$M21_err" "$M22" "$M22_err" "$M23" "$M23_err" "$M24" "$M24_err" "$M25" "$M25_err" "$M26" "$M26_err" >> Matrix.md
+printf "| eps_z  | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$M31" "$M31_err" "$M32" "$M32_err" "$M33" "$M33_err" "$M34" "$M34_err" "$M35" "$M35_err" "$M36" "$M36_err" >> Matrix.md
+printf "| eps_yz | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$M41" "$M41_err" "$M42" "$M42_err" "$M43" "$M43_err" "$M44" "$M44_err" "$M45" "$M45_err" "$M46" "$M46_err" >> Matrix.md
+printf "| eps_xz | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$M51" "$M51_err" "$M52" "$M52_err" "$M53" "$M53_err" "$M54" "$M54_err" "$M55" "$M55_err" "$M56" "$M56_err" >> Matrix.md
+printf "| eps_xy | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$M61" "$M61_err" "$M62" "$M62_err" "$M63" "$M63_err" "$M64" "$M64_err" "$M65" "$M65_err" "$M66" "$M66_err" >> Matrix.md
+
+printf "\n\n" >> Matrix.md
+
+printf "Q_ijkl (fitting error in percentage)\n" >> Matrix.md
+printf "|        | sig_xx         | sig_yy         | sig_zz         | sig_yz         | sig_xz         | sig_xy         |\n" >> Matrix.md
+printf "| -----  | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |\n" >> Matrix.md
+printf "| eta_x  | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$Q11" "$Q11_err" "$Q12" "$Q12_err" "$Q13" "$Q13_err" "$Q14" "$Q14_err" "$Q15" "$Q15_err" "$Q16" "$Q16_err" >> Matrix.md
+printf "| eta_y  | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$Q21" "$Q21_err" "$Q22" "$Q22_err" "$Q23" "$Q23_err" "$Q24" "$Q24_err" "$Q25" "$Q25_err" "$Q26" "$Q26_err" >> Matrix.md
+printf "| eta_z  | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$Q31" "$Q31_err" "$Q32" "$Q32_err" "$Q33" "$Q33_err" "$Q34" "$Q34_err" "$Q35" "$Q35_err" "$Q36" "$Q36_err" >> Matrix.md
+printf "| eta_yz | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$Q41" "$Q41_err" "$Q42" "$Q42_err" "$Q43" "$Q43_err" "$Q44" "$Q44_err" "$Q45" "$Q45_err" "$Q46" "$Q46_err" >> Matrix.md
+printf "| eta_xz | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$Q51" "$Q51_err" "$Q52" "$Q52_err" "$Q53" "$Q53_err" "$Q54" "$Q54_err" "$Q55" "$Q55_err" "$Q56" "$Q56_err" >> Matrix.md
+printf "| eta_xy | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) | %7.2f(%3.0f%%) |\n" "$Q61" "$Q61_err" "$Q62" "$Q62_err" "$Q63" "$Q63_err" "$Q64" "$Q64_err" "$Q65" "$Q65_err" "$Q66" "$Q66_err" >> Matrix.md
