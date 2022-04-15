@@ -13,9 +13,9 @@ This repository contains the bash scripts, C codes, ABINIT input files, and gnup
 - Now calculate the groundstate dielectric,electronic,elastic,etc. properties. In this repository, these calculations are
   done in the DFPT folder. 
     -  This may be achieved automatically using: 
-           ````bash
+           ```bash
            ./MakeGS.sh abi.in abi.out
-           ```` 
+           ``` 
        which will make a file
        called abi.GS, which will be an abinit input read to calculate GS wavefunctions or which can be modified to calculate band
        structures or whatever you want. When abi.GS is made, you may delete the large abi.out file, which contains all the steps of
