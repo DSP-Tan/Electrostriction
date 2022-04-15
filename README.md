@@ -1,7 +1,8 @@
 # Electrostriction
 This repository contains the bash scripts, C codes, ABINIT input files, and gnuplot plotting scripts that were used to investigate the electrostrictive properties of different materials.
 
-Procedure to calculate tensors for a particular structure.
+## Calculational procedure
+### Preprocessing, DFT, and DFPT calculations.
 - Create directory named after structure, including .cif file and other information
 - Create a directory for the LatticeRelaxation. This describes the type of relaxation we will do before calculating the 
   electrostrictive properties. For example, in o-LaMoOX_a, we have calculated electrostriction for the case where we only relax
@@ -19,7 +20,7 @@ Procedure to calculate tensors for a particular structure.
      to run a DFPT calculation. You may then, in the DFPT folder, submit the job for calculation,  using the created abi.in.
 
 - With the groundstate, and groundstate properties obtained, we can now apply the relevant stresses/strains to calculate the electrostrictive
-  tensors (M and Q for stress, m and q for strains). We begin describeing only the stress method, since for the LaMoX repository we are in,
+  tensors (M and Q for stress, m and q for strains). We begin describing only the stress method, since for the LaMoX repository we are in,
   this is all there is. The strain calculations may be found in other repositories.
 - - Create the stress branch directories: "mkdir SigX, SigY, SigZ, SigYZ, SigXZ, SigXY"
 - - To calculate the change in permitivity for a given stress, cd into that stress directory.
@@ -30,3 +31,4 @@ Procedure to calculate tensors for a particular structure.
 - - When these calculations are done you have the permitivity as a funciton of changing x stress.
 - - Repeat this for every stress branch.
 
+### Postprocessing, data extraction and gathering
