@@ -33,7 +33,7 @@ This repository contains the bash scripts, C codes, ABINIT input files, and gnup
 
 ### Postprocessing, data extraction and gathering
 - First check that all the calculations are finished. Use the following for loop in conjunction with "Check.sh":
-    # or: for i in Sig[XYZ]*
+    #or: for i in Sig[XYZ]*
     for i in SigX, SigY, SigZ, SigYZ, SigXZ, SigXY  
         do
         echo $i
