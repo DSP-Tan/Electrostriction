@@ -13,14 +13,14 @@ This repository contains the bash scripts, C codes, ABINIT input files, and gnup
 - Now calculate the groundstate dielectric,electronic,elastic,etc. properties. In this repository, these calculations are
   done in the DFPT folder. 
     -  This may be achieved automatically using: 
-           ```bash
+           ```
            ./MakeGS.sh abi.in abi.out
            ``` 
        which will make a file
        called abi.GS, which will be an abinit input read to calculate GS wavefunctions or which can be modified to calculate band
        structures or whatever you want. When abi.GS is made, you may delete the large abi.out file, which contains all the steps of
        the relaxation, as we do not need this anymore with the relaxed coordinates contained in abi.GS
-    -  With abi.GS in the folder, you may execute: "./MakeDFPT.sh". This will create a DFPT folder, and also the input files needed
+    -  With abi.GS in the folder, you may execute: ```./MakeDFPT.sh```. This will create a DFPT folder, and also the input files needed
        to run a DFPT calculation. You may then, in the DFPT folder, submit the job for calculation,  using the created abi.in.
 
 - With the groundstate, and groundstate properties obtained, we can now apply the relevant stresses/strains to calculate the electrostrictive
