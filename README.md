@@ -33,7 +33,9 @@ This repository contains the bash scripts, C codes, ABINIT input files, and gnup
 
 ### Postprocessing, data extraction and gathering
 - First check that all the calculations are finished. Use the following for loop in conjunction with "Check.sh":
-    
+ 
+
+```bash   
     #or: for i in Sig[XYZ]*
     for i in SigX, SigY, SigZ, SigYZ, SigXZ, SigXY  
         do
@@ -42,6 +44,7 @@ This repository contains the bash scripts, C codes, ABINIT input files, and gnup
         ../../../ScriptsAndCodes/Check.sh
         cd ../
         done
+```
 
 - If they are all finished, you can run PostPlotEtc.sh, and this will use ExtractFitStressPermRigid.sh, to extract the permitivities as 
   a function of stress, calculate the rigidities (using gslinv.c) by inverting these permitivity matrices, and it will then do all the
