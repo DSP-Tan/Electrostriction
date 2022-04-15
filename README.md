@@ -17,5 +17,16 @@ Procedure to calculate tensors for a particular structure.
      the relaxation, as we do not need this anymore with the relaxed coordinates contained in abi.GS
 - -  With abi.GS in the folder, you may execute: "./MakeDFPT.sh". This will create a DFPT folder, and also the input files needed
      to run a DFPT calculation. You may then, in the DFPT folder, submit the job for calculation,  using the created abi.in.
--
+
+- With the groundstate, and groundstate properties obtained, we can now apply the relevant stresses/strains to calculate the electrostrictive
+  tensors (M and Q for stress, m and q for strains). We begin describeing only the stress method, since for the LaMoX repository we are in,
+  this is all there is. The strain calculations may be found in other repositories.
+- - Create the stress branch directories: "mkdir SigX, SigY, SigZ, SigYZ, SigXZ, SigXY"
+- - To calculate the change in permitivity for a given stress, cd into that stress directory.
+- - Then you will use the abi.in which has eg. "strtarget XXXX 5*0". You will use Sig.sh which will change this XXXX to a given stress value
+    and create directories like SigX_0.5GPa, SigX_-0.5GPa, with strtarget being the atomic unit equivalent of 0.5GPa and -0.5GPa in each one.
+- - You then relax the cells in these directories till the stress tensor has the specified values.
+- - When they are finished you can run Sig_DFPT.sh, which itself runs MakeGS.sh and MakeDFPT.sh, and this will create and run the DFPT calculations.
+- - When these calculations are done you have the permitivity as a funciton of changing x stress.
+- - Repeat this for every stress branch.
 
