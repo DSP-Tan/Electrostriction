@@ -306,99 +306,15 @@
 |   |   |   +--- Run.sh
 |   |   |   +--- Sig.sh
 |   |   |   +--- SigZ_-0.5GPa
-|   |   |   |   +--- abi.GS
-|   |   |   |   +--- abi.in
 |   |   |   |   +--- DFPT
-|   |   |   |   |   +--- abi.in
-|   |   |   |   |   +--- abi.out
-|   |   |   |   |   +--- abiMDDB.in
-|   |   |   |   |   +--- anaddb.files
-|   |   |   |   |   +--- anaddb.in
-|   |   |   |   |   +--- anaddb.out
-|   |   |   |   |   +--- fart.txt
-|   |   |   |   |   +--- PostProc.sh
-|   |   |   |   |   +--- PpFin.txt
-|   |   |   |   |   +--- Run.sh
-|   |   |   |   +--- fart.txt
-|   |   |   |   +--- MakeDFPT.sh
-|   |   |   |   +--- MakeGS.sh
-|   |   |   |   +--- Run.sh
 |   |   |   +--- SigZ_-1.0GPa
-|   |   |   |   +--- abi.GS
-|   |   |   |   +--- abi.in
 |   |   |   |   +--- DFPT
-|   |   |   |   |   +--- abi.in
-|   |   |   |   |   +--- abi.out
-|   |   |   |   |   +--- abiMDDB.in
-|   |   |   |   |   +--- anaddb.files
-|   |   |   |   |   +--- anaddb.in
-|   |   |   |   |   +--- anaddb.out
-|   |   |   |   |   +--- fart.txt
-|   |   |   |   |   +--- PostProc.sh
-|   |   |   |   |   +--- PpFin.txt
-|   |   |   |   |   +--- Run.sh
-|   |   |   |   +--- fart.txt
-|   |   |   |   +--- MakeDFPT.sh
-|   |   |   |   +--- MakeGS.sh
-|   |   |   |   +--- Run.sh
 |   |   |   +--- SigZ_0.0GPa
-|   |   |   |   +--- abi.GS
-|   |   |   |   +--- abi.in
 |   |   |   |   +--- DFPT
-|   |   |   |   |   +--- abi.in
-|   |   |   |   |   +--- abi.out
-|   |   |   |   |   +--- abiMDDB.in
-|   |   |   |   |   +--- anaddb.files
-|   |   |   |   |   +--- anaddb.in
-|   |   |   |   |   +--- anaddb.out
-|   |   |   |   |   +--- fart.txt
-|   |   |   |   |   +--- PostProc.sh
-|   |   |   |   |   +--- PpFin.txt
-|   |   |   |   |   +--- Run.sh
-|   |   |   |   +--- fart.txt
-|   |   |   |   +--- MakeDFPT.sh
-|   |   |   |   +--- MakeGS.sh
-|   |   |   |   +--- Run.sh
 |   |   |   +--- SigZ_0.5GPa
-|   |   |   |   +--- abi.GS
-|   |   |   |   +--- abi.in
 |   |   |   |   +--- DFPT
-|   |   |   |   |   +--- abi.in
-|   |   |   |   |   +--- abi.out
-|   |   |   |   |   +--- abiMDDB.in
-|   |   |   |   |   +--- anaddb.files
-|   |   |   |   |   +--- anaddb.in
-|   |   |   |   |   +--- anaddb.out
-|   |   |   |   |   +--- fart.txt
-|   |   |   |   |   +--- PostProc.sh
-|   |   |   |   |   +--- PpFin.txt
-|   |   |   |   |   +--- Run.sh
-|   |   |   |   +--- fart.txt
-|   |   |   |   +--- MakeDFPT.sh
-|   |   |   |   +--- MakeGS.sh
-|   |   |   |   +--- Run.sh
 |   |   |   +--- SigZ_1.0GPa
-|   |   |   |   +--- abi.GS
-|   |   |   |   +--- abi.in
 |   |   |   |   +--- DFPT
-|   |   |   |   |   +--- abi.in
-|   |   |   |   |   +--- abi.out
-|   |   |   |   |   +--- abiMDDB.in
-|   |   |   |   |   +--- anaddb.files
-|   |   |   |   |   +--- anaddb.in
-|   |   |   |   |   +--- anaddb.out
-|   |   |   |   |   +--- fart.txt
-|   |   |   |   |   +--- PostProc.sh
-|   |   |   |   |   +--- PpFin.txt
-|   |   |   |   |   +--- Run.sh
-|   |   |   |   +--- fart.txt
-|   |   |   |   +--- MakeDFPT.sh
-|   |   |   |   +--- MakeGS.sh
-|   |   |   |   +--- Run.sh
-|   |   |   +--- Sig_DFPT.sh
-|   |   |   +--- StressPerm.txt
-|   |   |   +--- StressRigid.txt
-|   |   +--- Sig_DFPT.sh
 +--- o-LaMoOX_b
 |   +--- Clean.sh
 |   +--- ContinueRelaxation.sh
