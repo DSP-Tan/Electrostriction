@@ -5,9 +5,9 @@
 ! Flags
 !*******
    dieflag  3  # 0=>not; 1=>freq-depdt epsilon tensor; 2=>epsilo infty; 3=>relaxed-ion epsilon tensor
-   elaflag  3  #the flag for the elastic constant
- piezoflag  7  #the flag for the piezoelectric constant
- instrflag  1  #the flag for the internal strain tensor
+   elaflag  0  #the flag for the elastic constant
+ piezoflag  0  #the flag for the piezoelectric constant
+ instrflag  0  #the flag for the internal strain tensor
      eivec  1
 ! Wavevector grid number 1
 !**************************

@@ -1,0 +1,360 @@
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressPerm.txt)" using ($2*10**9):($3*eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eps0x*eps_free + 2*x*M13
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   M13          
+   0 9.9999920000e+18   0.00e+00  1.41e+09    1.000000e+00
+   7 1.5408936952e-24  -1.19e-11  1.41e+08    9.463360e-22
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 1.54089e-24
+rel. change during last iteration : -1.19198e-16
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 6.20664e-13
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.85223e-25
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+M13             = 9.46336e-22      +/- 1.963e-22    (20.74%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressPerm.txt)" using ($2*10**9):($7*eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eps0y*eps_free + 2*x*M23
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   M23          
+   0 9.9999920000e+18   0.00e+00  1.41e+09    1.000000e+00
+   7 9.2797590128e-26  -1.24e-11  1.41e+02   -4.781258e-23
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 9.27976e-26
+rel. change during last iteration : -1.23704e-16
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.52313e-13
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.31994e-26
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+M23             = -4.78126e-23     +/- 4.817e-23    (100.7%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressPerm.txt)" using ($2*10**9):($11*eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eps0z*eps_free + 2*x*M33
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   M33          
+   0 9.9999920000e+18   0.00e+00  1.41e+09    1.000000e+00
+   6 7.7444792067e-22  -9.14e-03  1.41e+03    3.223855e-20
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 7.74448e-22
+rel. change during last iteration : -9.14457e-08
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.39145e-11
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.93612e-22
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+M33             = 3.22386e-20      +/- 4.4e-21      (13.65%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressPerm.txt)" using ($2*10**9):($8*eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eps0yz*eps_free + 2*x*M43
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   M43          
+   0 9.9999920000e+18   0.00e+00  1.41e+09    1.000000e+00
+   7 1.9622043763e-26   0.00e+00  1.41e+02    2.390632e-22
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 1.9622e-26
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 7.00394e-14
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.90551e-27
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+M43             = 2.39063e-22      +/- 2.215e-23    (9.265%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressPerm.txt)" using ($2*10**9):($5*eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eps0xz*eps_free + 2*x*M53
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   M53          
+   0 9.9999920000e+18   0.00e+00  1.41e+09    1.000000e+00
+   6 3.1241183478e-23  -2.27e-01  1.41e+03   -5.303661e-21
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 3.12412e-23
+rel. change during last iteration : -2.2669e-06
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.79469e-12
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.8103e-24
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+M53             = -5.30366e-21     +/- 8.838e-22    (16.66%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressPerm.txt)" using ($2*10**9):($4*eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eps0xy*eps_free + 2*x*M63
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   M63          
+   0 9.9999920000e+18   0.00e+00  1.41e+09    1.000000e+00
+   7 3.0553989433e-26   0.00e+00  1.41e+02    1.770835e-23
+
+After 7 iterations the fit converged.
+final sum of squares of residuals : 3.0554e-26
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 8.73985e-14
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.6385e-27
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+M63             = 1.77084e-23      +/- 2.764e-23    (156.1%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressRigid.txt)" using ($2*10**9):($3/eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eta0x/eps_free + 2*x*Q13
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Q13          
+   0 1.0211186611e+19   0.00e+00  1.41e+09    1.000000e+00
+   4 2.1378523650e+13  -2.12e-06  1.41e+05   -1.050351e-02
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.13785e+13
+rel. change during last iteration : -2.12153e-11
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.31185e+06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 5.34463e+12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Q13             = -0.0105035       +/- 0.0007311    (6.96%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressRigid.txt)" using ($2*10**9):($7/eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eta0y/eps_free + 2*x*Q23
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Q23          
+   0 9.9848913367e+18   0.00e+00  1.41e+09    1.000000e+00
+   4 2.7668290469e+13  -1.59e-06  1.41e+05    7.567035e-04
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 2.76683e+13
+rel. change during last iteration : -1.59151e-11
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 2.63003e+06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.91707e+12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Q23             = 0.000756703      +/- 0.0008317    (109.9%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressRigid.txt)" using ($2*10**9):($11/eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eta0z/eps_free + 2*x*Q33
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Q33          
+   0 1.3416467798e+19   0.00e+00  1.41e+09    1.000000e+00
+   4 4.6441609689e+15  -1.28e-08  1.41e+05   -1.580947e-01
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 4.64416e+15
+rel. change during last iteration : -1.27903e-13
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 3.4074e+07
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.16104e+15
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Q33             = -0.158095        +/- 0.01078      (6.816%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressRigid.txt)" using ($2*10**9):($8/eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eta0yz/eps_free + 2*x*Q43
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Q43          
+   0 1.0077849411e+19   0.00e+00  1.41e+09    1.000000e+00
+   4 3.1557565397e+12  -1.41e-05  1.41e+05   -3.885169e-03
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 3.15576e+12
+rel. change during last iteration : -1.4136e-10
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 888222
+variance of residuals (reduced chisquare) = WSSR/ndf   : 7.88939e+11
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Q43             = -0.00388517      +/- 0.0002809    (7.23%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressRigid.txt)" using ($2*10**9):($5/eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eta0xz/eps_free + 2*x*Q53
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Q53          
+   0 1.0697072851e+19   0.00e+00  1.41e+09    1.000000e+00
+   4 1.3947601827e+13  -3.40e-06  1.41e+05   -3.426628e-02
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.39476e+13
+rel. change during last iteration : -3.39814e-11
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.86732e+06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.4869e+12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Q53             = -0.0342663       +/- 0.0005905    (1.723%)
+
+
+*******************************************************************************
+Fri Apr 15 13:45:23 2022
+
+
+FIT:    data read from "<(sed -n '/^-1\.0/,/^1\.0/p' StressRigid.txt)" using ($2*10**9):($4/eps_free)
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x)= eta0xy/eps_free + 2*x*Q63
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   Q63          
+   0 1.0046817629e+19   0.00e+00  1.41e+09    1.000000e+00
+   4 1.3471275756e+13  -3.30e-06  1.41e+05   -2.337877e-03
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 1.34713e+13
+rel. change during last iteration : -3.30119e-11
+
+degrees of freedom    (FIT_NDF)                        : 4
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.83516e+06
+variance of residuals (reduced chisquare) = WSSR/ndf   : 3.36782e+12
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+Q63             = -0.00233788      +/- 0.0005803    (24.82%)

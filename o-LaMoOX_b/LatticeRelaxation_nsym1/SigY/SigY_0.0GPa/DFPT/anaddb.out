@@ -14,8 +14,8 @@
  acknowledgments of the ABINIT effort.
  For more information, see https://www.abinit.org .
 
-.Starting date : Tue 28 Sep 2021.
-- ( at 16h35 )
+.Starting date : Sat 17 Jul 2021.
+- ( at 13h18 )
   
 
 ================================================================================
@@ -9600,6 +9600,6 @@
  
 ================================================================================
  
-+Total cpu time      0.150  and wall time      0.408 sec
++Total cpu time      0.144  and wall time      0.447 sec
  
  anaddb : the run completed succesfully.

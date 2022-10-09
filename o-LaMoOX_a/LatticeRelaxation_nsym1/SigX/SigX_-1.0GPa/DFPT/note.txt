@@ -1,0 +1,3 @@
+Total pseudopotential strength Dij (hartree):
+
+prteigrs : prtvol=0 or 1, do not print more k-points.

@@ -14,8 +14,8 @@
  acknowledgments of the ABINIT effort.
  For more information, see https://www.abinit.org .
 
-.Starting date : Mon 27 Sep 2021.
-- ( at 15h11 )
+.Starting date : Fri 16 Jul 2021.
+- ( at 22h22 )
   
 - input  file    -> abi.in
 - output file    -> abi.out
@@ -24687,10 +24687,10 @@ P          mk1mem           1
 - The licence allows the authors to put it on the Web.
 - DOI and bibtex: see https://docs.abinit.org/theory/bibliography/#gonze2016
 -
-- Proc.   0 individual time (sec): cpu=      16921.6  wall=      17307.0
+- Proc.   0 individual time (sec): cpu=      19476.7  wall=      20119.7
  
 ================================================================================
  
  Calculation completed.
 .Delivered   0 WARNINGs and   0 COMMENTs to log file.
-+Overall time at end (sec) : cpu=    1008977.1  wall=    1038390.4
++Overall time at end (sec) : cpu=    1157134.3  wall=    1207154.0

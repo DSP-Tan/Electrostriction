@@ -1,4 +1,4 @@
-sig (GPa) sig2      epsX            epsXY  epsXZ  epsYX  epsY            epsYZ  epsZX  epsZY  epsZ           
+sig (GPa) SigY      epsX            epsXY  epsXZ  epsYX  epsY            epsYZ  epsZX  epsZY  epsZ           
 -1.0      -1.000000 20.4723         0.17   15.83  0.17   26.9326         0.75   15.83  0.75   63.1930        
 -0.5      -0.499998 19.8448         0.13   13.89  0.13   27.1954         0.57   13.89  0.57   57.5632        
 0.0       0.000000  19.3964         0.10   12.49  0.10   27.4477         0.41   12.49  0.41   53.5712        

@@ -15,7 +15,7 @@
  For more information, see https://www.abinit.org .
 
 .Starting date : Sun  3 Oct 2021.
-- ( at 11h39 )
+- ( at 11h41 )
   
 
 ================================================================================
@@ -9595,10 +9595,10 @@
       1.76780393      0.35328373      0.15976898
      -0.19130398      0.00125191     -1.03008731
 -
-- Proc.   0 individual time (sec): cpu=          0.2  wall=          0.4
+- Proc.   0 individual time (sec): cpu=          0.1  wall=          0.4
  
 ================================================================================
  
-+Total cpu time      0.152  and wall time      0.416 sec
++Total cpu time      0.146  and wall time      0.392 sec
  
  anaddb : the run completed succesfully.
