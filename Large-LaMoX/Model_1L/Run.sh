@@ -1,7 +1,7 @@
 #!/bin/bash
 # Submission script for nic5
 #SBATCH --job-name=LaM_1L
-#SBATCH --time=9:00:00
+#SBATCH --time=12:00:00
 #SBATCH --ntasks=60
 #SBATCH --mem-per-cpu=1548
 #SBATCH --partition=batch

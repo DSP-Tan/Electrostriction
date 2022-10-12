@@ -1,0 +1,7 @@
+This calculation was broken up using the script "MakeFolders.sh",
+roughly 3 atomic perturbations were completed per submitted job.
+
+The times for these calculations are contained in Times.txt. The
+individual calculation folders were deleted after completion, as
+all the important information is in abi.ddb, which we may also 
+delete, since we have the full results in anaddb.out.
