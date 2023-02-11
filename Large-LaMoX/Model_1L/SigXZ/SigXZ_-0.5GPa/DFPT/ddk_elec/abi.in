@@ -1,6 +1,6 @@
-#input for non-centrosymmetric orthorhombic HfO2
+#input for KTaO3
 
-ndtset    2
+ndtset    3
 
 autoparal 1
 
@@ -10,6 +10,7 @@ natom    104
 typat    16*1 16*2 72*3
 znucl    57 42 8
 acell 3*1
+
 
 rprim
   2.69500865677109E+01 -3.61409070397007E-01 -4.91282929427272E-01
@@ -121,35 +122,76 @@ rprim
                        5.2241756709E-01  4.6688629917E-01  1.1681036830E-01
                        7.8803850539E-01  1.0118678918E+00  6.5319010090E-01
  
-kptopt   1
-            ngfft         144     144      72
-ngkpt    1 1 2
 nshiftk 1
 shiftk 
 0.5 0.5 0.5
-ecut       30
-ecutsm   0.5
-pawecutdg  30
-pawxcdev   0
+#chksymbreak 0
+kptopt   1
+ngkpt    1 1 1
+
+ecut 30
 ixc      -116133
 nband    420
+nstep    150
 diemac   4
 
-# First SCF run       
-#irdwfk1   1
-nstep1    100
-iscf1     7
-tolvrs1   1.0E-20
-
 #Refinement using tolwfr
-nstep2    250
+irdwfk1   1
+nstep1    50
+getwfk1   -1
+iscf1     7
+tolwfr1   1.0E-20
+
+
+# Data Set 2: Response Function calculation : d/dk
+rfelfd2    2
+rfdir2     1    1    1
+ird1wf2    0
+ird1den2   0
+
+
+nqpt2      1
+qpt2       0.0  0.0  0.0
+
 getwfk2   -1
-iscf2     7
-tolwfr2   1.0E-20
+getden2   -1
+
+kptopt2    2
+
+iscf2     -3
+
+tolwfr2    1.0d-22
+
+# Data set 3 : Response Function calculation - electric field perturbation
+prtwf3    0
+prtden3   0
+rfphon3   0            # Will consider phonon-type perturbation
+rfelfd3   3            # Electric Field
+rfstrs3   0            # Strains
+
+ird1wf3   0
+rfdir3    1   1   1    # Along all reduced coordinate axis
+#rfatpol3  1   80        # All the atoms will be displaced
+
+nqpt3     1            # One wavevector is to be considered
+qpt3      0.0 0.0 0.0  # This wavevector is q=0 (Gamma)
+
+kptopt3   2            # Automatic generation of k points, taking
+                       # into account the time-reversal symmetry only
+
+getwfk3   1            # Read the ground-state wavefunctions
+getddk3   2
+
+tolvrs3   1.0d-20      # SCF stopping criterion
+
 
 # Printing flags
 prtden    1
 prteig    0
 prtwf     1
 prtposcar 0
-prtcif    1
+prtcif    0
+ecutsm   0.5
+ngfft         144     144      72
+pawecutdg  30
+pawxcdev   0
