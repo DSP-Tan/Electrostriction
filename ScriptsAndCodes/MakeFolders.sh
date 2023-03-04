@@ -6,11 +6,6 @@ for i in `seq 1 8 104`
    j=$(awk -v fart="$i" 'BEGIN {print fart+7}') 
    name=$(printf "%dTo%d\n" $i $j)
    
-   if [ $name == "1To8" ]
-   then
-           continue
-   fi
-   
    mkdir -p $name
    sed    's&abi-i&../abi-i&g'                    abi.files > ${name}/abi.files
 
@@ -24,7 +19,7 @@ for i in `seq 1 8 104`
    sed -i "/nqpt3/,/tolvrs3/s/3/2/g"                          ${name}/abi.in
    
    sed 's/#SBATCH --job-name=.*/#SBATCH --job-name='$name'/g' Run.sh       > ${name}/Run.sh
-   sed -i 's/#SBATCH --time=.*/#SBATCH --time=24:00:00/g'                  ${name}/Run.sh
+   sed -i 's/#SBATCH --time=.*/#SBATCH --time=48:00:00/g'                  ${name}/Run.sh
    sed -i 's/#SBATCH --mem-per-cpu=.*/#SBATCH --mem-per-cpu=5548/g'        ${name}/Run.sh
    
    echo $name 
